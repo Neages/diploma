@@ -1,0 +1,122 @@
+.header
+  display: flex
+  position: relative
+  padding-top: 31px
+  padding-bottom: 100px
+  background-image: url('../img/header-bg.jpg')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  &-social
+    position: absolute
+    left: 0
+    bottom: 0
+    display: flex
+    align-items: flex-end
+    &__links
+      position: relative
+      display: flex
+      align-items: center
+      flex-direction: column-reverse
+      margin-left: 56px
+      &::after
+        content: ''
+        position: absolute
+        left: 50%
+        bottom: 100%
+        width: 2px
+        height: 620px
+        background-color: $red
+     
+    &__link
+      margin-top: 30px
+  &-top
+    &__content
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 20rem
+    &__interface
+      display: flex
+      align-items: center
+    &__nav
+      margin-right: 43px
+  // &-middle__content
+  //   display: flex
+  //   align-items: center
+  //   justify-content: center
+  &__contacts
+    display: flex
+    align-items: center
+  &__phone
+     margin-right: 46px
+
+.logo
+  display: flex
+  align-items: center
+  text-decoration: none
+  color: $dark
+  &__title
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 29px
+    margin-left: 12px
+
+.nav
+  &__link 
+    position: relative
+    text-transform: uppercase
+    text-decoration: none
+    color: $dark
+    font-weight: lighter
+    margin-right: 17px
+    padding-bottom: 6px
+    &::after
+      position: absolute
+      content: ''
+      bottom: 0
+      left: 50%
+      width: 70%
+      height: 2px
+      margin: auto
+      transform: translateX(-50%)
+      background-color: transparent
+      transition: 0.3s
+    &:hover
+      &::after
+        background-color: $red
+
+.phone
+  &__link
+    text-decoration: none
+    color: $dark
+    font-size: 18px
+    font-weight: 600
+    transition: 0.1s
+    &:hover
+      color: $red
+.hero
+  &__title
+    line-height: 69.79px
+    font-size: 60px 
+    font-weight: bold
+    margin-bottom: 0
+  &__subtitle
+    font-size: 61px
+    margin: 0
+    margin-top: 0.5rem
+    margin-bottom: 2.7rem
+    color: $red
+  &__text
+    margin: 0
+    max-width: 564px
+    font-size: 19.6px
+    line-height: 29px
+    margin-bottom: 2.3rem
+  &__button
+    padding: 16px 40px
+  &__image
+    width: 40%
+    height: 200px
+    background: url('../img/hero-image.png') no-repeat center
+    background-size: cover
