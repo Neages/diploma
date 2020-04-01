@@ -1,0 +1,178 @@
+@media ( max-width:1920px  )
+    .header-social__links
+      margin-left: 56px
+@media ( max-width:1920px  )
+  .header
+    background-position: top left,89% 147px
+    background-size: 47%, 41% 
+@media ( max-width:1320px  )
+  .header
+    background-position: top left, 84% 16rem
+    background-size: 47%, 41%
+  .container
+    max-width: 90%
+  .header-social__links
+    margin-left: 1rem
+@media  ( max-width: 1270px )
+  .header 
+    background-position: top left, 97% 18rem
+    background-size: 47%, 41%
+@media ( max-width:1190px  )
+  html
+    font-size: 14px
+@media ( max-width:991px  )
+  html
+    font-size: 12px
+  .button--red
+    &:hover
+      background-color: $red
+      color: $white
+  .phone__link
+    &:hover
+      color: $dark
+  .nav__menu
+    display: none
+  .header
+    margin-bottom: 0
+    padding-bottom: 15rem
+    background-image: none 
+    background: #e5f5e1
+    background: linear-gradient(#e5f5e1,#f6e7ee) 
+    &-social
+      opacity: 0
+      visibility: hidden
+    &-top__content
+      margin-bottom: 10rem
+  .about
+    &__content
+      background:#fff url('../img/about-bg.png') no-repeat center
+      margin-top: 0
+      transform: translateY(-50%)
+@media ( max-width:780px  )
+  body.lock
+    overflow: hidden
+  main.invisible
+    visibility: hidden
+    transition: 0.1s
+  .nav
+    &__menu
+      display: block
+      position: fixed
+      top: -100%
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(#f6e7ee,#e5f5e1) 
+      padding: 80px 0 0 0
+      transition: 0.4s
+      overflow: auto
+      &.active
+        top: 0
+    &__link
+      display: block
+      font-size: 1.5rem
+      margin-right: 0
+      margin-bottom: 2rem
+      margin: 1rem 0 2rem 2rem
+  .about
+    &__content
+      background-size: 100%
+      height: 26rem
+      padding-left: 1rem
+    &__blocks
+      flex-wrap: wrap
+      height: 30rem
+      align-items: center
+      width: 100%
+      height: 100%
+    &__block
+      flex-basis: 40%
+    &__subtitle
+      margin-left: 1rem
+  .logo
+    z-index: 3
+  .header
+    padding-bottom: 20rem
+    &__phone
+      display: none
+    &-top
+      &__button
+        display: none
+    &__burger
+      display: block
+      position: fixed
+      right: 10%
+      top: 5%
+      width: 30px
+      height: 20px
+      z-index: 3
+      &::before, &::after
+        content: ''
+        background-color: $red
+        position: absolute
+        width: 100%
+        height: 2.5px
+        left: 0
+        transition: 0.3s
+      &::before
+        top: 0
+      &::after
+        bottom: 0
+      & span
+        position: absolute
+        background-color: $red
+        left: 0
+        top: 9px
+        width: 100%
+        height: 2.4px
+        transition: 0.3s
+
+  .header__burger.active::before
+    transform: rotate(45deg)
+    top: 9px
+  .header__burger.active::after
+    transform: rotate(-45deg)
+    bottom: 9px
+  .header__burger.active span
+    transform: scale(0)
+@media ( max-width:575px  )
+  html
+    font-size: 10px
+  .header-top__button
+    display: none
+  .phone__link
+    color: $red
+  .hero
+    &__title
+      line-height: 3.375rem 
+      font-size: 3rem 
+    &__subtitle
+      font-size: 3rem 
+    &__text
+      font-size: 1.2rem 
+    &__button
+      width: 50%
+      height: 3.5rem
+@media ( max-width:490px  )
+  .about
+    &__blocks
+      flex-direction: column
+      flex-wrap: nowrap
+      align-items: start
+    &__block
+      flex-direction: row
+@media ( max-width:380px  )
+  .hero
+    &__title
+      line-height: 2.375rem 
+      font-size: 2.5rem 
+    &__subtitle
+      font-size: 2.5rem 
+    &__text
+      font-size: 1.2rem 
+    &__button
+      width: 100%
+
+
+
+  
