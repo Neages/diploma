@@ -340,6 +340,51 @@ button {
   line-height: 22px;
   max-width: 50rem; }
 
+.label {
+  color: #939292;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 18.72px;
+  text-transform: uppercase; }
+
+.input {
+  border: none;
+  border-bottom: 1px solid #939497; }
+
+.input-group {
+  display: flex;
+  flex-direction: column; }
+
+input::-webkit-input-placeholder {
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 35px; }
+
+input::-moz-placeholder {
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 35px; }
+
+input:-ms-input-placeholder {
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 35px; }
+
+input::-ms-input-placeholder {
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 35px; }
+
+input::placeholder {
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 35px; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -352,6 +397,11 @@ img {
   max-width: 100%; }
 
 .container {
+  width: 1170px;
+  margin: auto; }
+
+.container-relative {
+  position: relative;
   width: 1170px;
   margin: auto; }
 
@@ -627,6 +677,50 @@ img {
       line-height: 25.33px;
       max-width: 100%; }
 
+.price {
+  position: relative;
+  padding-top: 4.5rem;
+  padding-bottom: 4.625rem;
+  display: flex;
+  background: url("../img/price-bg.jpg") no-repeat center/cover; }
+  .price__title {
+    margin-top: 0;
+    padding-right: 5.3125rem;
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 35px; }
+  .price__content {
+    padding: 5rem 0 0 3rem;
+    background-color: #ffffff;
+    position: relative;
+    height: 37.375rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%; }
+  .price__form {
+    height: 100%;
+    margin-top: 0.5rem; }
+  .price__input-group {
+    margin-bottom: 1.7rem;
+    max-width: 83.5%; }
+    .price__input-group:last-of-type {
+      margin-top: -0.5rem; }
+  .price__label {
+    margin-bottom: 0.4rem; }
+    .price__label:last-of-type {
+      margin-bottom: 0.5rem; }
+  .price__button {
+    margin-left: 25%;
+    margin-top: 2.5%;
+    padding: 13px 41px; }
+  .price__image {
+    position: absolute;
+    top: 0;
+    right: -13%;
+    width: 47rem;
+    height: 37.3125rem; }
+
 @media (max-width: 1920px) {
   .header-social__links {
     margin-left: 56px; } }
@@ -640,7 +734,7 @@ img {
   .header {
     background-position: top left, 84% 16rem;
     background-size: 47%, 41%; }
-  .container {
+  .container, .container-relative {
     max-width: 90%; }
   .header-social__links {
     margin-left: 1rem; } }
@@ -652,9 +746,21 @@ img {
 
 @media (max-width: 1190px) {
   html {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .price__image {
+    right: 0;
+    width: 35rem; }
+  .service {
+    margin-bottom: 12rem; } }
 
 @media (max-width: 991px) {
+  .price__image {
+    display: none; }
+  .price__content {
+    margin: auto;
+    width: 75%; }
+  .service {
+    margin-bottom: 0; }
   html {
     font-size: 12px; }
   .button--red:hover {
@@ -690,7 +796,11 @@ img {
     .service__block-title {
       font-size: 1.5rem; }
     .service__block-subtitle {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+  .price__content {
+    height: 40rem; }
+  .price__input {
+    height: 2rem; } }
 
 @media (max-width: 900px) {
   .service {
@@ -848,7 +958,24 @@ img {
       .service__block-title {
         font-size: 2rem; }
       .service__block-subtitle {
-        font-size: 1.3rem; } }
+        font-size: 1.3rem; }
+  .price__content {
+    width: 90%;
+    height: 41rem; }
+  .price__label {
+    font-size: 1.5rem; }
+  .price__input {
+    height: 2rem; }
+    .price__input::-webkit-input-placeholder {
+      font-size: 1.5rem; }
+    .price__input::-moz-placeholder {
+      font-size: 1.5rem; }
+    .price__input:-ms-input-placeholder {
+      font-size: 1.5rem; }
+    .price__input::-ms-input-placeholder {
+      font-size: 1.5rem; }
+    .price__input::placeholder {
+      font-size: 1.5rem; } }
 
 @media (max-width: 490px) {
   .about__blocks {
@@ -856,7 +983,10 @@ img {
     flex-wrap: nowrap;
     align-items: start; }
   .about__block {
-    flex-direction: row; } }
+    flex-direction: row; }
+  .price__button {
+    margin-left: 0;
+    width: 90%; } }
 
 @media (max-width: 415px) {
   .service {
@@ -875,8 +1005,14 @@ img {
   .feature h3 {
     font-size: 1.7rem; }
   .service {
-    height: 170rem; } }
+    height: 170rem; }
+  .price__content {
+    width: 100%;
+    margin: 0; } }
 
 @media (max-width: 319px) {
   .service {
-    height: 180rem; } }
+    height: 180rem;
+    overflow: auto; }
+  .price__content {
+    height: 43rem; } }

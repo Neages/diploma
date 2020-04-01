@@ -9,7 +9,7 @@
   .header
     background-position: top left, 84% 16rem
     background-size: 47%, 41%
-  .container
+  .container, .container-relative
     max-width: 90%
   .header-social__links
     margin-left: 1rem
@@ -20,7 +20,21 @@
 @media ( max-width:1190px  )
   html
     font-size: 14px
+  .price
+    &__image
+      right: 0
+      width: 35rem
+  .service
+    margin-bottom: 12rem
 @media ( max-width:991px  )
+  .price
+    &__image
+      display: none
+    &__content
+      margin: auto
+      width: 75%
+  .service
+    margin-bottom: 0
   html
     font-size: 12px
   .button--red
@@ -62,6 +76,11 @@
         font-size: 1.5rem  
       &-subtitle
         font-size: 1.2rem
+  .price
+    &__content
+      height: 40rem
+    &__input
+      height: 2rem
 @media ( max-width:900px  )
   .service
 
@@ -75,6 +94,7 @@
       margin-left: 0
       &:last-of-type
         margin: auto
+ 
 @media ( max-width:780px  )
   body.lock
     overflow: hidden
@@ -223,6 +243,16 @@
         font-size: 2rem
       &-subtitle
         font-size: 1.3rem
+  .price
+    &__content
+      width: 90%
+      height: 41rem
+    &__label
+      font-size: 1.5rem
+    &__input
+      height: 2rem
+      &::placeholder
+        font-size: 1.5rem
 @media ( max-width:490px  )
   .about
     &__blocks
@@ -231,6 +261,10 @@
       align-items: start
     &__block
       flex-direction: row
+  .price
+    &__button
+      margin-left: 0
+      width: 90% 
 @media ( max-width:415px  )
   .service
     height: 160rem
@@ -249,7 +283,14 @@
     font-size: 1.7rem
   .service
     height: 170rem
-
+  .price
+    &__content
+      width: 100%
+      margin: 0
 @media ( max-width:319px  )
   .service
     height: 180rem
+    overflow: auto
+  .price
+    &__content
+      height: 43rem
