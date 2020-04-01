@@ -44,16 +44,53 @@
     &-top__content
       margin-bottom: 10rem
   .about
+    margin-bottom: -20.8rem
     &__content
       background:#fff url('../img/about-bg.png') no-repeat center
       margin-top: 0
       transform: translateY(-50%)
+  .feature
+    &__block
+      width: 40%
+
+  .service
+    padding-top: 2rem
+    background: linear-gradient(#f6e7ee,#f3f3db) 
+    height: 70rem
+    &__block
+      &-title
+        font-size: 1.5rem  
+      &-subtitle
+        font-size: 1.2rem
+@media ( max-width:900px  )
+  .service
+
+    height: 100rem
+    padding-top: 2rem
+    &__content
+      justify-content: center
+    &__block
+      width: 40%
+      margin-right: 1rem
+      margin-left: 0
+      &:last-of-type
+        margin: auto
 @media ( max-width:780px  )
   body.lock
     overflow: hidden
   main.invisible
     visibility: hidden
     transition: 0.1s
+  .service
+    height: 120rem
+    &__block
+      width: 90%
+      margin: 0
+      margin-bottom: 1rem
+      &-title
+        font-size: 1.25rem
+      &-subtitle
+        font-size: 1.1rem
   .nav
     &__menu
       display: block
@@ -75,6 +112,7 @@
       margin-bottom: 2rem
       margin: 1rem 0 2rem 2rem
   .about
+    margin-bottom: -26rem
     &__content
       background-size: 100%
       height: 26rem
@@ -108,7 +146,7 @@
       z-index: 3
       &::before, &::after
         content: ''
-        background-color: $red
+        background-color: $dark
         position: absolute
         width: 100%
         height: 2.5px
@@ -120,7 +158,7 @@
         bottom: 0
       & span
         position: absolute
-        background-color: $red
+        background-color: $dark
         left: 0
         top: 9px
         width: 100%
@@ -135,6 +173,10 @@
     bottom: 9px
   .header__burger.active span
     transform: scale(0)
+  .video
+    height: 48.6rem
+  .feature p
+    font-size: 1.1rem
 @media ( max-width:575px  )
   html
     font-size: 10px
@@ -153,6 +195,34 @@
     &__button
       width: 50%
       height: 3.5rem
+  .feature
+    &__content
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__block
+      width: 70%
+      &--left
+        margin-left: 0
+      &--right
+        margin-right: 0
+      &--small
+        margin-left: 0
+      &--move
+        margin-left: 0
+        margin-left: 0
+    & h3
+      font-size: 2rem
+    & p
+      font-size: 1.3rem
+  .service
+    height: 148rem
+    &__block
+      width: 90%
+      &-title
+        font-size: 2rem
+      &-subtitle
+        font-size: 1.3rem
 @media ( max-width:490px  )
   .about
     &__blocks
@@ -161,6 +231,9 @@
       align-items: start
     &__block
       flex-direction: row
+@media ( max-width:415px  )
+  .service
+    height: 160rem
 @media ( max-width:380px  )
   .hero
     &__title
@@ -172,7 +245,11 @@
       font-size: 1.2rem 
     &__button
       width: 100%
+  .feature h3
+    font-size: 1.7rem
+  .service
+    height: 170rem
 
-
-
-  
+@media ( max-width:319px  )
+  .service
+    height: 180rem

@@ -1,0 +1,51 @@
+.service
+  height: 56.25rem
+  margin-bottom: 2rem
+  background-image: url('../img/service/service-bg.jpg') ,  url('../img/service/service-bg1.jpg')
+  background-repeat: no-repeat , no-repeat
+  background-position: 113% 97%, -20% 98%
+  background-size: 58%, 40%
+  background-clip: content-box
+  &__title
+    margin-bottom: 1.8rem
+  &__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    
+  &__subtitle
+    margin-bottom: 3.3rem  
+  &__block
+    margin-right: 1rem
+    padding: 3rem 1rem 1.5rem 2.3rem
+    width: 31%
+    background-color: #fff
+    border: 1px solid #c9c8c8
+    box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05)
+    border-radius: 5px
+    margin-bottom: 2.3rem
+    &:last-of-type
+      margin-right: 34.5%
+      h3
+        margin-top: 0.4rem
+    &--first
+      border-bottom: 5px solid $red
+      padding-bottom: 1.7rem
+    &--move
+      margin-right: 0
+      & h3 
+        margin-bottom: 1.7rem
+    &-title
+      margin-top: 1rem
+      margin-bottom: 1.3rem
+      color: #2c2c2d
+      font-size: 27px
+      font-weight: 700
+      line-height: 37.33px
+    &-subtitle
+      margin-top: 0
+      color: #2c2c2d
+      font-size: 16px
+      font-weight: 300
+      line-height: 25.33px
+      max-width: 100%
